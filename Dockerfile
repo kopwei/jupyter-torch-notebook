@@ -20,9 +20,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-# alias python='python3'
-RUN ln -s /usr/bin/python3 /usr/bin/python
-
 # Install UV package manager
 ADD https://astral.sh/uv/install.sh /uv-installer.sh
 RUN sh /uv-installer.sh && rm /uv-installer.sh
