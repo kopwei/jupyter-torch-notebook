@@ -1,0 +1,20 @@
+[project]
+name = "jupyter-torch-notebook"
+version = "0.1.0"
+description = "JupyterLab with PyTorch and CUDA 12.8"
+dependencies = [
+  "requests==2.32.3",
+  "jupyterlab==4.4.3",
+  "torch==2.7.0+cu128",
+  "torchvision==0.22.0+cu128",
+  "torchaudio==2.7.0+cu128"
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+torchaudio = { index = "pytorch" }
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu128"
