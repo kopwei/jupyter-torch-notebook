@@ -8,9 +8,9 @@ dependencies = [
   "transformers",
   "requests==2.32.3",
   "jupyterlab==4.4.3",
-  "torch==2.7.0+cu128",
-  "torchvision==0.22.0+cu128",
-  "torchaudio==2.7.0+cu128"
+  "torch==2.7.0+cu118",
+  "torchvision==0.22.0+cu118",
+  "torchaudio==2.7.0+cu118"
 ]
 
 [tool.uv.sources]
@@ -20,4 +20,4 @@ torchaudio = { index = "pytorch" }
 
 [[tool.uv.index]]
 name = "pytorch"
-url = "https://download.pytorch.org/whl/cu128"
+url = "https://download.pytorch.org/whl/cu118"
